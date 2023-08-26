@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Store</title>
+  <meta name="description"
+    content="This simple shopping cart prototype shows how js,can be used to build a friendly user experience with instant visual updates and scaleable code in ecommerce applications.">
+  <!-- Main Template Css -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/mediaScreen.css">
+  <!-- Render All Element Normally  -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <!-- Font Awesome library -->
+  <link rel="stylesheet" href="CSS/all.min.css">
+  <!-- font google -->
+
+</head>
+
+<body>
+  <!-- ! Header -->
+  <nav>
+    <div class="container">
+      <div class="logo-bar">
+        <a href="#landing"><img src="imag/logo-Soop.gif" alt="logo"></a>
+      </div>
+      <!-- saerch -->
+      <form class="arial-search" action="php">
+        <label for="search-box">All</label>
+        <input class="search-box" type="search" id="search-box" placeholder="Search">
+        <i id="search-ico" class="fa-solid fa-magnifying-glass search-ico"></i>
+      </form>
+      <!-- !ads pro -->
+      <div class="imdb-pro">
+        <a href="#">
+          <div class="pro-ad">Fashion<span class="pro">Store</span>
+            <div class="ads-pro">
+              <button class="pro-free" href="/#" title="Store Map">Get Store Map</button>
+            </div>
+          </div>
+        </a href="#">
+      </div>
+      <!-- !others links -->
+      <div class="nav-list">
+        <i class="fa-solid fa-bars-staggered" id="bar-othLink">
+        </i>
+        <ul class="links-list">
+          <li id="ptn-signIn"><a href="html/index.html" target="_blank">Sign In<i
+                class="fa-solid fa-caret-down en-ico"></i></a></li>
+          <li class="ariya-lang"> <a href="#">En</a><i class="fa-solid fa-caret-down en-ico"></i>
+            <ul class="all-languag">
+              <li>FULLY SUPPORTED</li>
+              <li>
+                <a href="#">
+                  <label id="lang"><i class="fa-regular fa-circle-dot "></i></label>
+                  <span id="lang">English (united States)</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span id="lang">PARTIALLY SUPPORTED</span>
+                  <label id="lang"><i class="fa-regular fa-circle-question"></i></i></label>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <label id="lang"><i class="fa-regular fa-circle"></i></label>
+                  <span id="lang">Francais (Canada)</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <label id="lang"><i class="fa-regular fa-circle"></i></label>
+                  <span id="lang">Francais (France)</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <label id="lang"><i class="fa-regular fa-circle"></i></label>
+                  <span id="lang">Deutach (Deutaschland)</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <label id="lang"><i class="fa-regular fa-circle"></i></label>
+                  <span id="lang">Italiano (italia)</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <label id="lang"><i class="fa-regular fa-circle"></i></label>
+                  <span id="lang">Espanole (Espana)</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <label id="lang"><i class="fa-regular fa-circle"></i></label>
+                  <span id="lang">Espanole (Mexico )</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <!-- Wallet cart  -->
+        <ul>
+          <li class="wallet-link"><span><i class="fa-solid fa-cart-arrow-down fa-xl ico-Cart"></i></span>
+            <div class="wallet-dw">
+              <ul>
+                <li class="head-list"><i class="fa-solid fa-shop"></i><i class="fa-solid fa-xmark clickClose"></i>
+                </li>
+                <li id="pt-cartAdd"><i class="fa-solid fa-cart-plus"></i><span>Cart</span><i
+                    class="fa-solid fa-caret-down en-ico"></i>
+                  <ul class="added-prod">
+                    <li>
+                      <h4>Cart Empty</h4>
+                    </li>
+                  </ul>
+                </li>
+                <li id="ptn-favorit"><i class="fa-solid fa-heart"></i><span>Favorite</span><i
+                    class="fa-solid fa-caret-down en-ico"></i>
+                  <ul class="favorit-prod">
+                    <li>
+                      <h4>Favorite Empty</h4>
+                    </li>
+                  </ul>
+                </li>
+                <li><i class="fa-solid fa-dolly"></i><a href="#products">Products</a></li>
+                <li><i class="fa-solid fa-headset"></i><a href="#contact">Contact</a></li>
+                <li><i class="fa-solid fa-address-card"></i><a href="#about">About</a></li>
+              </ul>
+            </div>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- ! Landing -->
+  <div class="Scroll-btn"><i class="fa-solid fa-arrow-up btn-scroll"></i></div>
+  <div class="landing" id="landing">
+    <div class="container">
+      <div class="libr-products">
+        <div class="slid-products">
+          <span>
+            <img id="img-cra" src="imag/sale.png" alt="">
+          </span>
+          <ul class="list-products">
+            <li>
+              <img id="img-products" src="imag/product-1.jfif" alt="">
+              <div class="details-products">
+                <div class="text-deatails">
+                  <h2><i class="fa-solid fa-shirt"></i><span id="title-prd">Sweet-shirt</span></h2>
+                  <p id="describ-prod">Sweet-shirt cotton for winter</p>
+                  <h3><mark id="pric">300$</mark></h3>
+                </div>
+                <div class="icon-shop">
+                  <i class="fa-solid fa-cart-plus"></i>
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="next" id="next"><i class="fa-solid fa-angle-right "></i></div>
+          <div class="back" id="back"><i class="fa-solid fa-angle-left"></i></div>
+        </div>
+        <div class="others-products">
+          <ul class="list-prod"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- !general header -->
+  <div class="end-pg">
+    <div>
+      <img id="ico-ourPrd" src="imag/ours-prod.png" alt="">
+      <h1>Ours Products</h1>
+    </div>
+    <img id="back-head" src="imag/OC1YA50.jpg" alt="">
+    <img id="sh-emp" src="imag/shop-em.png" alt="">
+    <img id="sh-com" src="imag/shop-com.png" alt="">
+  </div>
+  <!-- ! products -->
+  <div class="products" id="products">
+    <div class="container">
+      <div class="products-carts"></div>
+    </div>
+  </div>
+  <!-- !general header -->
+  <div class="end-pg">
+    <div>
+      <img id="ico-ourPrd" src="imag/ours-prod.png" alt="">
+      <h1>Ours Products</h1>
+    </div>
+    <img id="back-head" src="imag/OC1YA50.jpg" alt="">
+    <img id="sh-emp" src="imag/shop-em.png" alt="">
+    <img id="sh-com" src="imag/shop-com.png" alt="">
+  </div>
+  <!-- !suit products -->
+  <div class="suit-products">
+    <div class="container">
+      <div class="all-suits">
+      </div>
+    </div>
+  </div>
+  <!-- ! Contact -->
+  <div class="contact" id="contact">
+    <div class="text-contact">
+      <img id="img-contact" src="imag/call cevter.png" alt="" />
+      <h1>Request A contact</h1>
+    </div>
+    <div class="request-me">
+      <form action="php">
+        <input type="text" placeholder="User Name" required>
+        <input type="email" name="" id="" placeholder="Your Email" required>
+        <input type="tel" name="" id="" placeholder="Your Phone">
+        <textarea id="tell-us" placeholder="Tell Us About Your Needs "></textarea>
+        <input type="submit" value="Send" class="send">
+      </form>
+    </div>
+  </div>
+  <!-- !Footer -->
+  <footer>
+
+    <div class="all-footer" id="about">
+      <div class="boxs-foter">
+        <h1>AHMAD</h1>
+        <ul>
+          <li>
+            <a rel="stylesheet" class="facbook" href="https://www.facebook.com/profile.php?id=100004979358795" target="_blank">
+              <i class="fa-brands fa-facebook fa-xl "></i>
+            </a>
+          </li>
+          <li><a class="twitter" href="https://twitter.com/AhmadSalah95" target="_blank">
+            <i class="fa-brands fa-twitter fa-xl "></i></a></li>
+          <li><a class="github" href="https://github.com/Ahmad-S-Mohamed" target="_blank"><i
+                class="fa-brands fa-github fa-xl "></i></a></li>
+          <li><a class="linkedin" href="https://www.linkedin.com/in/ahmad-s-mohamed95" target="_blank"><i
+                class="fa-brands fa-linkedin fa-xl "></i></a></li>
+        </ul>
+        <p>👋 Hi, I’m @Ahmadsalah.<br>
+          👀 I’m interested in programming.<br>
+          🌱 I’m FrontEnd Developer ...
+        </p>
+      </div>
+      <div class="boxs-link">
+        <ul>
+          <li><a href="https://ahmad-s-mohamed.github.io/Music-play-list/"><i
+                class="fa-solid fa-angles-right fa-lg"></i>Important Link 1</a></li>
+          <li><a href="https://ahmad-s-mohamed.github.io/Template-one/"><i
+                class="fa-solid fa-angles-right fa-lg"></i>Important Link 2</a></li>
+          <li><a href="https://ahmad-s-mohamed.github.io/kasber-template/"><i
+                class="fa-solid fa-angles-right fa-lg"></i>Important Link 3</a></li>
+        </ul>
+      </div>
+      <div class="box-address">
+        <div class="box-add">
+          <i class="fa-solid fa-location-dot fa-xl"></i>
+          <p>Egypt, Assyut, Inside The City</p>
+        </div>
+        <div class="box-add">
+          <i class="fa-regular fa-clock fa-xl"></i>
+          <p>Business Hours: From 10:00 To 18:00</p>
+        </div>
+        <div class="box-add">
+          <i class="fa-solid fa-phone-volume fa-xl"></i>
+          <p>01121340830</p>
+        </div>
+        <div class="box-add">
+          <i class="fa-brands fa-whatsapp fa-xl"></i>
+          <p>01022399281</p>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

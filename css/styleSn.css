@@ -1,0 +1,122 @@
+/*! ============ 
+! Page Sign In
+!==================*/
+
+body {
+  margin: 0;
+  padding: 0;
+}
+.main-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image:linear-gradient(45deg, grey, #eee);
+  width: 100%;
+  height: 100vh;
+}
+.card-sn,
+.card-snUp {
+  position: relative;
+  background-color: #dcdcdc47;
+  width: 350px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-shadow: 0px 0px 3px black;
+}
+.card-sn img,
+.card-snUp img{
+  position: absolute;
+  width: 100px;
+  top: -60px;
+  background-color: #d0d0d0;
+  border-radius: 50%;
+  padding: 10px;
+  filter: drop-shadow(0px 0px 1px black);
+}
+.card-sn form,
+.card-snUp form  {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 250px;
+  color: black;
+}
+.card-sn form input:not(:last-child),
+.card-snUp form input {
+  height: 30px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #575857;
+  background-color: transparent;
+}
+.card-sn form input:focus,
+.card-snUp form input:focus {
+  border-bottom: 1px solid goldenrod;
+}
+.card-sn form input:nth-of-type(3),
+.card-snUp #ptn-sgUp {
+  background-color: goldenrod;
+  font-weight: 700;
+  width: 100px;
+}
+.card-sn form input:nth-of-type(3):hover,
+.card-snUp #ptn-sgUp:hover {
+  background-color: rgb(240, 189, 62);
+  cursor: pointer;
+}
+.ps-snu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ps-snu input {
+  background-color: lightgray;
+  border: none;
+  padding: 10px 12px;
+  cursor: pointer;
+  font-weight: 700;
+  filter: drop-shadow(2px 4px 1px black);
+}
+.ps-snu h4 a {
+  text-decoration: none;
+  color: black;
+}
+.ps-snu h4 a:hover {
+  text-decoration: underline;
+  color: #575857;
+}
+
+.ps-snu input:hover {
+  background-color: rgb(121, 121, 121);
+  border: none;
+}
+/* ! Sign up */
+
+.fir-las {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.fir-las input {
+  width: calc(240px / 2);
+}
+.card-snUp{
+  position: absolute;
+  display: none;
+}
+.arr-lft{
+  color: black;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.arr-lft:hover{
+  color: #575857;
+}
