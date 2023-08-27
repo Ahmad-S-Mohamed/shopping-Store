@@ -876,7 +876,7 @@ nav .container {
   ! - Footer
 !==================*/
 footer {
-  background-image:  url("/imag/footer-v.gif");
+  background-image:  url("../imag/footer-v.gif");
   background-color: var(--blckcolor-color);
   background-size: cover;
   padding: 40px 0;
