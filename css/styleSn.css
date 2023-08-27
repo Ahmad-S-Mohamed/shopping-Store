@@ -49,7 +49,7 @@ body {
 .card-snUp {
   position: relative;
   background-color: #dcdcdc47;
-  width: 350px;
+/*   width: 350px; */
   height: 400px;
   display: flex;
   align-items: center;
