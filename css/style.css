@@ -433,6 +433,7 @@ nav .container {
   width: var(--mainWidth-width);
   align-items: var(--styleFlexA-align-items);
   gap: 15px;
+  padding-top: 40px;
 }
 
 .slid-products {
