@@ -80,11 +80,13 @@
 !======================= */
 @media (max-width: 770px) {
   .landing{
-    padding-top: 10px;
     display: block;
+    
   }
   .landing .libr-products {
     flex-direction: column;
+    position: relative;
+    top: 150px;
   }
 
   .others-products {
