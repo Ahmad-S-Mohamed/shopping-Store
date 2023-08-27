@@ -131,6 +131,7 @@ nav {
   height: 70px;
   display: flex;
   align-items: var(--styleFlexA-align-items);
+  position: absolute;
 }
 
 nav .container {
@@ -424,6 +425,7 @@ nav .container {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .landing .libr-products {
