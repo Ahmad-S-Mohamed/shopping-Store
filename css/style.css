@@ -342,7 +342,7 @@ nav .container {
   z-index: 99;
   transition: all .5s ease;
   overflow-y: auto;
-  height: 100vh;
+/*   height: 100%; */
   display: none;
 }
 
